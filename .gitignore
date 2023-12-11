@@ -24,3 +24,4 @@ tableau_demo_eex-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+_site

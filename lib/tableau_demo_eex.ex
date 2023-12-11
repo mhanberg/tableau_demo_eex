@@ -1,18 +1,7 @@
 defmodule TableauDemoEex do
-  @moduledoc """
-  Documentation for `TableauDemoEex`.
-  """
+  require EEx
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> TableauDemoEex.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  defmacro sigil_H({:<<>>, opts, [bin]}, _mods) do
+    EEx.compile_string(bin, opts)
   end
 end
